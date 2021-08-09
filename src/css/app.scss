@@ -1,0 +1,803 @@
+// app global css in SCSS form
+@font-face {
+  font-family: TT Norms ExtraBold;
+  src: url(./fonts/TTNorms-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: TT Norms Bold;
+  src: url(./fonts/TTNorms-Bold.ttf);
+}
+
+@font-face {
+  font-family: TT Norms Medium;
+  src: url(./fonts/TTNorms-Medium.ttf);
+}
+
+@font-face {
+  font-family: TT Norms Regular;
+  src: url(./fonts/TTNorms-Regular.ttf);
+}
+
+@media (min-width: 835px){
+  .law{
+    &-list{
+        font-family: TT Norms Bold;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &-wrapper{
+      padding: 0 270px;
+    }
+
+    &-header{
+      font-family: TT Norms Bold;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 69px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 80px;
+    }
+
+    &-text{
+      font-family: TT Norms Regular;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 20px;
+      text-indent: 1.5em;
+    }
+  }
+
+  .esg{
+    &-long{
+      &-wrapper{
+        padding-bottom: 80px;
+      }
+
+      &-block{
+        &__item{
+          width: 945px;
+          margin: 0 auto;
+          background: #FFFFFF;
+          box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.08);
+          border-radius: 10px;
+          margin-top: 40px;
+
+          &-text{
+            font-family: TT Norms Regular;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            display: inline-block;
+            width: 814px;
+            height: 120px;
+            padding-top: 15px;
+          }
+
+          &-img{
+            display: inline-block;
+            vertical-align: top;
+            margin: 29px 46px 0 39px;
+          }
+        }
+      }
+
+      &-header{
+        font-family: TT Norms Bold;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 750px;
+        margin: 80px auto 0 auto;
+      }
+    }
+
+    &-advantages{
+      &-wrapper{
+        background: #D1D1D1;
+        margin-top: 120px;
+        padding-bottom: 40px;
+      }
+
+      &-text{
+        font-family: TT Norms Bold;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding-top: 80px;
+        margin: 0 auto;
+
+        width: 839px;
+      }
+
+      &-block{
+
+        &__item{
+          width: 905px;
+          margin: 12px auto;
+
+          background: #FFFFFF;
+          opacity: 0.7;
+          box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.08);
+          border-radius: 10px;
+
+          &-text{
+            font-family: TT Norms Regular;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            display: inline-block;
+            width: 825px;
+            margin-left: 12px;
+          }
+
+          &-img{
+            width: 36px;
+            height: 58px;
+            margin-left: 32px;
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    &-why{
+      &-wrapper{
+        margin-top: 760px;
+      }
+
+      &-block{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 80px;
+        padding-left: 200px;
+      }
+
+      &__item{
+        width: 350px;
+        text-align: center;
+
+        &-img{
+          width: 65px;
+          height: 65px;
+        }
+
+        &-text{
+          font-family: TT Norms Regular;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: center;
+
+          width: 350px;
+          height: 46px;
+          margin-top: 40px;
+        }
+
+      }
+
+      &-header{
+        font-family: TT Norms Bold;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 69px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+
+      &-text{
+        font-family: TT Norms Medium;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    &-banner{
+      &-wrapper{
+        width: 1920px;
+        height: 800px;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
+  .about{
+    &-task{
+      &-block{
+
+      }
+
+      &-goals{
+        font-family: TT Norms Regular;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 40px;
+        background: #039951;
+      }
+
+      &-text{
+        font-family: TT Norms Regular;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 40px;
+
+        &-bold{
+          font-family: TT Norms Bold;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 40px;
+          margin-top: 340px;
+        }
+      }
+
+      &-wrapper{
+        width: 1920px;
+        height: 500px;
+        margin-top: 120px;
+        background: url('../statics/images/about-goals.jpeg');
+        padding: 0 270px;
+      }
+
+      &-header{
+        font-family: TT Norms Bold;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 69px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 340px;
+        padding: 80px;
+        background: #039951;
+      }
+    }
+
+    &-goals{
+      &-wrapper{
+        margin-top: 625px;
+        padding: 0 270px;
+      }
+
+      &-header{
+        font-family: TT Norms Bold;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      &-text{
+        display: inline-block;
+        margin-left: 20px;
+
+        font-family: TT Norms Regular;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+        &-wrapper{
+          margin-top: 20px
+        }
+
+        &-icon{
+          width: 48px;
+          height: 48px;
+          display: inline-block;
+        }
+      }
+    }
+
+    &-mission{
+      &-block{
+        width: 797px;
+        height: 400px;
+        background: #FAFAFA;
+        border-radius: 5px;
+        position: absolute;
+        top: 232px;
+        left: 270px;
+
+        &-text{
+          font-family: TT Norms Regular;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin: 50px 50px;
+        }
+
+        &-header{
+          font-family: TT Norms Bold;
+          font-size: 46px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 69px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-left: 140px;
+          padding-top: 40px;
+        }
+      }
+
+      &-wrapper{
+        width: 1920px;
+        height: 665px;
+        background: url('../statics/images/about-mission.png');
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    &-wrapper{
+    }
+  }
+
+  .partners{
+    &-item{
+      width: 400px;
+      margin-right: 40px;
+      margin-top: 40px;
+      display: inline-block;
+
+      &-wrapper{
+        padding: 0 270px;
+      }
+    }
+  }
+
+  .contacts{
+    &-text{
+      width: 279px;
+      height: 72px;
+      display: inline-block;
+      vertical-align: middle;
+
+      font-family: TT Norms Medium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      &-span{
+        display: block;
+
+        font-family: TT Norms Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #A4A4A4;
+      }
+
+      &-email{
+        display: inline-block;
+      }
+
+      &-phone{
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      &-address{
+        display: inline-block;
+        margin-left: 25px;
+      }
+
+      &-city{
+        display: inline-block;
+        margin-top: 36px;
+        width: 328px;
+
+        font-family: TT Norms Medium;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      &-header{
+        font-family: TT Norms Bold;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 69px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      &-icon{
+        display: inline-block;
+        margin-right: 25px;
+        width: 30px;
+        height: 30px;
+      }
+
+      &-wrapper{
+        width: 100%;
+        height: 245px;
+        padding-left: 270px;
+      }
+    }
+
+    &-map{
+      &-wrapper{
+        width: 1920px;
+        height: 500px;
+      }
+    }
+  }
+
+  .news{
+    &-date{
+      display: block;
+      margin: auto;
+
+      font-family: TT Norms Bold;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: white;
+
+      &-wrapper{
+        width: 503px;
+        height: 80px;
+        background: #118BDD;
+        position: absolute;
+        top: 720px;
+        left: 1417px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-text{
+      &-wrapper{
+        display: inline-block;
+        margin-left: 70px;
+      }
+    }
+
+    &-arrow{
+      width: 50px;
+      height: 50px;
+      background: #118BDD;
+      display: flex;
+      align-items: center;
+
+      &-wrapper{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 70px;
+      }
+
+      &-svg{
+        display: block;
+        margin: auto;
+      }
+    }
+
+    &-body{
+      width: 1417px;
+      background: white;
+      position: absolute;
+      top: 520px;
+      z-index: 1;
+      padding-left: 270px;
+
+      &-title{
+        width: 980px;
+        font-family: TT Norms Bold;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 69px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 50px;
+      }
+
+      &-text{
+        width: 980px;
+        font-family: TT Norms Regular;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 50px;
+      }
+    }
+
+    &-img{
+      position: absolute;
+      width: 1920px;
+      height: 800px;
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  .header{
+    &-contacts{
+      display: inline-block;
+      margin-left: 88px;
+      vertical-align: middle;
+
+      &-email{
+        font-family: TT Norms Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #8C94A6;
+      }
+
+      &-phone{
+        font-family: TT Norms Medium;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+    }
+
+    &-nav{
+      display: inline-block;
+      margin-left: 650px;
+      vertical-align: middle;
+
+      &-item{
+        display: inline-block;
+        margin-left: 30px;
+        text-decoration: none;
+
+        font-family: TT Norms Bold;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        text-transform: uppercase;
+        color: white;
+
+        &:hover{
+          color: #039951;
+        }
+
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+
+    &-wrapper{
+      height: 160px;
+      background: white;
+    }
+
+    &-toolbar{
+      margin-left: 270px;
+      margin-top: 25px;
+
+      font-family: TT Norms Bold;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      text-align: left;
+    }
+  }
+
+  .index{
+    &-news{
+      &-item{
+        &-wrapper{
+          width: 680px;
+          height: 500px;
+          display: inline-block;
+
+          &:nth-child(odd){
+            margin-left: 20px;
+          }
+        }
+
+        &-date{
+          font-family: TT Norms Bold;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: white;
+
+          position: relative;
+          left: 500px;
+          top: -337px;
+          background: #118BDD;
+          width: 180px;
+          height: 80px;
+        }
+
+        & span {
+          vertical-align: middle;
+        }
+
+        &-block{
+          width: 500px;
+          height: 257px;
+          position: relative;
+          top: -257px;
+          left: 0;
+          background: #FAFAFA;
+          padding: 30px;
+
+          &-header{
+            font-family: TT Norms Bold;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 33px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #2991D6;
+          }
+
+          &-text{
+            font-family: TT Norms Regular;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 20px;
+          }
+        }
+
+        &-img{
+          width: 680px;
+          height: 500px;
+        }
+      }
+
+      &-header{
+        &-wrapper{
+          margin-bottom: 120px;
+        }
+
+        &-more{
+          &-wrapper{
+            display: inline-block;
+            margin-left: 919px;
+          }
+
+          &-text{
+            font-family: TT Norms Bold;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            text-align: left;
+          }
+        }
+
+        &-text{
+          font-family: TT Norms Bold;
+          font-size: 46px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 69px;
+          letter-spacing: 0em;
+          text-align: left;
+
+          display: inline-block;
+        }
+      }
+
+      &-wrapper{
+        width: 1380px;
+        margin-top: 120px;
+      }
+    }
+
+    &-banner{
+      &-block{
+        position: absolute;
+        left: 270px;
+        top: 273px;
+        width: 797px;
+
+        font-family: TT Norms ExtraBold;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 81px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+      }
+
+      &-wrapper{
+        width: 1920px;
+        height: 850px;
+
+        background: linear-gradient(0deg, rgba(12, 14, 22, 0.8), rgba(12, 14, 22, 0.8)), url('../statics/images/banner.jpg');
+      }
+    }
+  }
+}
