@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-img
-      src="../statics/images/esg-banner-cropped.png"
+      src="../statics/images/ESG-Factors.jpg"
       alt="esg-banner"
       class="esg-banner-wrapper"
     />

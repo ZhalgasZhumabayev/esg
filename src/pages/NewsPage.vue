@@ -27,7 +27,10 @@
       <div class="news-text-wrapper">
         <div class="news-body-title">{{ newsInfo.title }}</div>
 
-        <div class="news-body-text">{{ newsInfo.text }}</div>
+        <div
+          v-for="t in newsInfo.text"
+          :key="t"
+          class="news-body-text">{{ t }}</div>
       </div>
     </div>
 

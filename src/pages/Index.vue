@@ -33,7 +33,7 @@
 
         <div class="index-news-item-block">
           <div class="index-news-item-block-header">{{ n.title }}</div>
-          <div v-show="this.$q.platform.is.desktop" class="index-news-item-block-text">{{ n.text }}</div>
+          <div v-show="this.$q.platform.is.desktop" class="index-news-item-block-text">{{ n.text[0] }}</div>
         </div>
 
         <div class="index-news-item-date"><span>{{ n.date }}</span></div>
