@@ -1,10 +1,17 @@
 <template>
   <div>
     <q-img
-      src="../statics/images/img_001.jpeg"
+      :src="getImgUrl(newsInfo.img)"
       alt="img-item"
       class="news-img"
-    />
+    >
+      <template v-slot:loading>
+        <div class="text-green">
+          <q-spinner-ios />
+          <div class="q-mt-md">Loading...</div>
+        </div>
+      </template>
+    </q-img>
 
     <div class="news-body">
 
@@ -18,20 +25,52 @@
       </div>
 
       <div class="news-text-wrapper">
-        <div class="news-body-title">Корпорация Экополис: Поздравляем с наступающим Днём металлурга!</div>
+        <div class="news-body-title">{{ newsInfo.title }}</div>
 
-        <div class="news-body-text">Это профессиональный праздник тех, чей труд является основой большинства производственных процессов, поскольку без результатов работы металлургов не может обойтись ни одно крупное предприятие современной экономики.</div>
+        <div class="news-body-text">{{ newsInfo.text }}</div>
       </div>
     </div>
 
     <div class="news-date-wrapper">
-      <div class="news-date">20-45-8495</div>
+      <div class="news-date">{{ newsInfo.date }}</div>
     </div>
   </div>
 </template>
 
 <script>
+  import News from '../statics/data/news.json';
+
   export default {
     name: 'NewsPage',
+    data (){
+      return{
+        news: JSON.parse(JSON.stringify(News)),
+        newsInfo: {
+          id: '',
+          title: '',
+          text: '',
+          img: 'img_001.jpg',
+          date: ''
+        }
+      }
+    },
+    created() {
+      this.id = this.$route.params.id;
+    },
+    methods: {
+      getData(id) {
+        for (const news_id in this.news){
+          if (this.news[news_id].id == id){
+            this.newsInfo = this.news[news_id];
+          }
+        }
+      },
+      getImgUrl(pic) {
+        return require('../statics/images/' + pic)
+      }
+    },
+    mounted() {
+      this.getData(this.id);
+    }
   }
 </script>

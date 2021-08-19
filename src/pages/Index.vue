@@ -23,16 +23,17 @@
         v-for="n in news"
         :key="n.id"
         class="index-news-item-wrapper"
+        @click="$router.replace('/news/' + n.id)"
       >
-        <q-img
-          src="../statics/images/img_001.jpeg"
+        <img
+          :src="getImgUrl(n.img)"
           alt="img-item"
           class="index-news-item-img"
         />
 
         <div class="index-news-item-block">
           <div class="index-news-item-block-header">{{ n.title }}</div>
-          <div class="index-news-item-block-text">{{ n.text }}</div>
+          <div v-show="this.$q.platform.is.desktop" class="index-news-item-block-text">{{ n.text }}</div>
         </div>
 
         <div class="index-news-item-date"><span>{{ n.date }}</span></div>
@@ -52,7 +53,9 @@ export default {
     }
   },
   methods: {
-
+    getImgUrl(pic) {
+      return require('../statics/images/' + pic)
+    }
   }
 }
 </script>
